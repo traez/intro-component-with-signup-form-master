@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/traez/intro-component-with-signup-form-master](https://github.com/traez/intro-component-with-signup-form-master)
+- Live Site URL: [https://traez.github.io/intro-component-with-signup-form-master/](https://traez.github.io/intro-component-with-signup-form-master/)
 
 ## My process
 
