@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+/*
+The designs were created to the following widths:
+- Mobile: 375px
+- Desktop: 1440px
+
+*/
+:root {
+    --red: hsl(0, 100%, 74%); /*Primary*/
+    --green: hsl(154, 59%, 51%); /*Primary*/
+    --blue: hsl(248, 32%, 49%); /*Accent*/
+    --dark-blue: hsl(249, 10%, 26%); /*Neutral*/
+    --grayish-blue: hsl(246, 25%, 77%); /*Neutral*/
+      }
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    utline: 1px solid black; 
+}
+html{
+    display: flex;
+    flex-flow: column;
+    justify-content: center; 
+    align-items: center;
+    height:100%;
+    width: 100%;
+    font-family: 'Poppins';
+    overflow: scroll;
+    background-image: url(./images/bg-intro-mobile.png);
+    background-color: var(--red);
+    }
+main{
+        width: 19rem;
+        height: 45rem;
+        display:grid;
+        grid-template: 29fr 13fr 57fr/auto;
+        grid-template-areas:
+        "top"
+        "middle"
+        "bottom";
+        border: 0.1px solid black;
+    }
+article{
+    grid-area: top;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 1rem;
+    }
+h1{
+        font-size: 1.2rem;
+        text-align: center;
+        padding: 0 1rem;
+        color:white;
+    }
+h2{
+        font-size: 0.8rem;
+        text-align: center;
+        color:white;
+        font-weight: 700;
+    }
+footer{ 
+        font-size: 0.65rem;
+        text-align: center; 
+    }
+aside{
+    grid-area: middle;
+    margin: auto 1rem;
+    padding: 1rem 4rem;
+    text-align: center; 
+    font-size: 0.8rem;
+    font-weight: 900;
+    border-radius: 0.5rem;
+    color:white;
+    background-color: var(--blue);
+    box-shadow: 0px 5px 7px gray;
+    }
+aside > span{
+    font-weight: 100;
+}
+form{
+    grid-area: bottom;
+    margin: auto 1rem;
+    padding: 1rem 1rem;
+    height: 22rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0px 5px 7px gray;
+}
+li{
+    list-style-type: none;
+
+}
+input{
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    border: 0.1px solid gray; 
+}
+.icon{
+    background-image: url(./images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: 95% 0%;
+}
+.small{
+    float: right;
+    color:var(--red);
+    font-size: 0.6rem;
+    font-weight: bold;
+}
+.hide{
+    display: none;
+}
+button{
+    text-align: center; 
+    padding: 0.5rem 1rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    text-transform:uppercase;
+    font-weight: bold;
+    background-color: var(--green);
+    color:white;
+    box-shadow: 0px 5px 7px gray;
+    letter-spacing: 0.1rem;
+    font-size: 0.7rem;
+    cursor: pointer;
+    border: none;
+}
+h3{
+    font-size: 0.6rem;
+    text-align: center; 
+    font-weight: 100;
+    padding: 0.5rem 1rem;
+    color:var(--dark-blue);
+}
+h3 > span{
+   font-weight: bold;
+   color: var(--red);
+}
+.hide{
+    display: none;
+}
+@media (min-width: 60em) {
+html{
+        background-image: url(./images/bg-intro-desktop.png);
+        }
+main{
+        width: 60rem;
+        height: 34rem;
+        display:grid;
+        grid-template: 13fr 57fr/1fr 1fr;
+        grid-template-areas:
+        "pinkg blueg"
+        "pinkg whiteg";
+    }
+article{
+        grid-area: pinkg;
+        padding: 0 4rem;
+        align-items: flex-start;
+        justify-content:center;
+        gap: 1rem;
+        }
+h1{
+            font-size: 1.9rem;
+            text-align: left;
+            padding: 0;
+        }
+h2{
+             text-align: left;
+             font-weight: 500;
+        }
+aside{
+            grid-area: blueg;
+            margin: 3rem 1rem auto 1rem;
+            }
+form{
+                grid-area: whiteg;
+            }
+}
